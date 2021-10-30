@@ -56,7 +56,7 @@ public class FirstPageSteps extends BasicFactoryTest {
 
     @Then("User should see on the page russian text")
     public void shouldSeeChanges() {
-        mainFactoryPage.isUpdateButtonRusIsDisplayed();
+        mainFactoryPage.isPageInNewLanguage();
     }
 
 
