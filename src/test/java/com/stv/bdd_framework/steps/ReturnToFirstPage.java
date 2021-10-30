@@ -11,13 +11,16 @@ public class ReturnToFirstPage {
     LoginPage loginPage= new LoginPage();
     @Given("Account page is loaded")
     public void accountPageIsLoaded(){
+        loginPage.isLoginContainerDisplayed();
 
     }
     @When("User click wiggle label")
     public void clickWiggleLabel(){
+        loginPage.clickOnWiggle();
     }
     @Then("User should on the start page russian text ")
     public void shouldSeeStartPageWithoutChanges(){
+        mainFactoryPage.isPageInNewLanguage();
 
     }
 
